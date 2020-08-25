@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="signup">
+            <h2>Sign up</h2>
+            <form action="" id="signup">
+                <input type="email" name="email">
+                <input type="password" name="password">
+                <button type="submit">Create account</button>
+            </form>
+        </div>
+        <div class="login">
+            <h2>Log in</h2>
+            <form action="" id="login">
+                <input type="email" name="email">
+                <input type="password" name="password">
+                <button type="submit">Login</button>
+            </form>
+        </div>
+       
+
+    </div>
+    <div class="info">
+        <div id="infoDiv"></div>
+        <button id="logout">Log out</button>
+    </div>
+
+    <div id="fireInfo">
+
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCv56fo3L-l2XwseaaLmITaOM-nASiIMLc",
+            authDomain: "userauth-2f15e.firebaseapp.com",
+            databaseURL: "https://userauth-2f15e.firebaseio.com",
+            projectId: "userauth-2f15e",
+            storageBucket: "userauth-2f15e.appspot.com",
+            messagingSenderId: "614680801972",
+            appId: "1:614680801972:web:5dcb8f6225475275d59de1"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        const db = firebase.firestore();
+        const auth = firebase.auth();
+    </script>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
